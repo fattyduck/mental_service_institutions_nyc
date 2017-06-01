@@ -31,3 +31,7 @@ This is a Mental Service Institution finder Rails API with information on Name, 
 
 ![image](https://cloud.githubusercontent.com/assets/11187726/26679995/86c1b83e-46a5-11e7-9aef-d119633317f5.png)
 
+**Show Page will show individual institutions and all address and geographic information**
+
+![image](https://cloud.githubusercontent.com/assets/11187726/26680132/1f26bfac-46a6-11e7-9d7b-728a8b6ce8a3.png)
+
