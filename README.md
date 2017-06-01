@@ -1,24 +1,28 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+This is a Mental Service Institution finder Rails API with information on Name, Address, and Geographic information. 
 
-Things you may want to cover:
+### Technical Goals:
 
-* Ruby version
+* Do an initial pull for information from https://data.cityofnewyork.us/resource/8nqg-ia7v.json
 
-* System dependencies
+* Every night at 12AM, the program will check https://data.cityofnewyork.us/resource/8nqg-ia7v.json for updates
 
-* Configuration
+* Present Data from local database in JSON format 
 
-* Database creation
+* The program will check for errors during the nightly updates and send me an e-mail when error occurs
 
-* Database initialization
 
-* How to run the test suite
+### Code:
 
-* Services (job queues, cache servers, search engines, etc.)
+* Rakefile that will pull and update data:
+  * https://github.com/fattyduck/mental_service_institutions_nyc/blob/master/lib/tasks/get_institutions.rake
 
-* Deployment instructions
+* Using whenever to use crontab for nightly updates:
+  * https://github.com/fattyduck/mental_service_institutions_nyc/blob/master/config/schedule.rb
+  
+* Present Data in JSON format:
+  * https://github.com/fattyduck/mental_service_institutions_nyc/blob/master/app/controllers/institutions_controller.rb
 
-* ...
+* If the Rake file will errors and I will receive an e-mail:
+  *  https://github.com/fattyduck/mental_service_institutions_nyc/blob/master/app/mailers/error_mailer.rb
