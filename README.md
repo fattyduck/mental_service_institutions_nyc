@@ -26,3 +26,8 @@ This is a Mental Service Institution finder Rails API with information on Name, 
 
 * If the Rake file will errors and I will receive an e-mail:
   *  https://github.com/fattyduck/mental_service_institutions_nyc/blob/master/app/mailers/error_mailer.rb
+
+**Index page will show institutions and the cities they reside in**
+
+![image](https://cloud.githubusercontent.com/assets/11187726/26679995/86c1b83e-46a5-11e7-9aef-d119633317f5.png)
+
